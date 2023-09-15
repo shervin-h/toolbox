@@ -1,0 +1,1 @@
+export 'iranian_plates/iranian_plates.dart';
