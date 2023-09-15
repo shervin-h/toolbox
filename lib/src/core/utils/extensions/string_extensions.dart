@@ -1,4 +1,4 @@
-/// # [IsValidNationalCode] documentation :
+/// ## [IsValidNationalCode] documentation :
 ///
 /// An extension on `String` that adds a method to validate Iranian National Codes (Melli Codes).
 ///
@@ -7,13 +7,13 @@
 /// "کد ملی" (Melli Code) in Persian, are unique identification numbers assigned to
 /// Iranian citizens.
 ///
-/// Example usage:
+/// ### Example usage:
 /// ```dart
 /// final nationalCode = '0012345678';
 /// final isValid = nationalCode.isValidNationalCode();
 /// ```
 ///
-/// Returns `true` if the provided string is a valid Iranian National Code; otherwise, `false`.
+/// ### Returns `true` if the provided string is a valid Iranian National Code; otherwise, `false`.
 extension IsValidNationalCode on String {
   /// Validates whether the string is a valid Iranian National Code (Melli Code).
   ///
@@ -41,21 +41,21 @@ extension IsValidNationalCode on String {
   }
 }
 
-/// # [Separator] documentation :
+/// ## [Separator] documentation :
 ///
 /// An extension on `String` that adds a method to format numbers with separators.
 ///
 /// This extension provides an `addSeparator` method that can be used to add
 /// separators (e.g., commas) to a numeric string to improve its readability.
 ///
-/// Example usage:
+/// ### Example usage:
 /// ```dart
 /// final number = '1234567';
 /// final formattedNumber = number.addSeparator();
 /// // formattedNumber is '1,234,567'
 /// ```
 ///
-/// Parameters:
+/// ### Parameters:
 ///
 /// - `qty`: The number of digits between separators. Default is `3`.
 /// - `separator`: The separator string to insert between groups of digits. Default is `","`.
@@ -75,7 +75,7 @@ extension Separator on String {
   /// - [qty]: The number of digits between separators. Must be a positive integer.
   /// - [separator]: The separator string to insert between groups of digits.
   ///
-  /// Example:
+  /// ### Example:
   /// ```dart
   /// final number = '1234567';
   /// final formattedNumber = number.addSeparator();
@@ -117,7 +117,7 @@ extension Separator on String {
   }
 }
 
-/// # [CoverUndefineValue] documentation :
+/// ## [CoverUndefineValue] documentation :
 ///
 /// An extension on `String` that covers undefined or empty values.
 ///
@@ -125,7 +125,7 @@ extension Separator on String {
 /// replace undefined or empty string values with a specified default value,
 /// which is "undefined" by default.
 ///
-/// Example usage:
+/// ### Example usage:
 /// ```dart
 /// final text = 'null';
 /// final coveredText = text.coverUndefineValue();
@@ -136,14 +136,14 @@ extension Separator on String {
 /// undefined or empty characters (e.g., 'null', ' ', '-', '_', '&') and, if so,
 /// replaces them with the default "undefined" value.
 ///
-/// Parameters:
+/// ### Parameters:
 ///
 /// - `defaultValue`: The value to use as a replacement for undefined or empty strings.
 ///
 /// The `coverUndefineValue` method returns the original string if it contains
 /// non-empty and defined characters; otherwise, it returns the default value.
 ///
-/// Note: This method does not handle null references or objects other than strings.
+/// ### Note: This method does not handle null references or objects other than strings.
 extension CoverUndefineValue on String {
   /// Covers undefined or empty values with a specified default value.
   ///
@@ -153,7 +153,7 @@ extension CoverUndefineValue on String {
   ///
   /// - [defaultValue]: The value to use as a replacement for undefined or empty strings.
   ///
-  /// Example:
+  /// ### Example:
   /// ```dart
   /// final text = 'null';
   /// final coveredText = text.coverUndefineValue();
@@ -166,7 +166,7 @@ extension CoverUndefineValue on String {
   }
 }
 
-/// # [LimitedEllipses] documentation :
+/// ## [LimitedEllipses] documentation :
 ///
 /// An extension on `String` that limits the length of a string and appends ellipses if exceeded.
 ///
@@ -174,7 +174,7 @@ extension CoverUndefineValue on String {
 /// limit the length of a string to a specified `maxLength`. If the string's length
 /// exceeds the maximum length, it truncates the string and appends ellipses "...".
 ///
-/// Example usage:
+/// ### Example usage:
 /// ```dart
 /// final text = 'Lorem ipsum dolor sit amet';
 /// final limitedText = text.limitedEllipses(maxLength: 10);
@@ -186,7 +186,7 @@ extension CoverUndefineValue on String {
 /// it truncates the string to `maxLength - 4` characters and appends "..." to indicate
 /// that the string has been limited.
 ///
-/// Parameters:
+/// ### Parameters:
 ///
 /// - `maxLength`: The maximum length of the string before truncation and appending ellipses.
 ///
@@ -203,7 +203,7 @@ extension LimitedEllipses on String {
   ///
   /// - [maxLength]: The maximum length of the string before truncation and appending ellipses.
   ///
-  /// Example:
+  /// ### Example:
   /// ```dart
   /// final text = 'Lorem ipsum dolor sit amet';
   /// final limitedText = text.limitedEllipses(maxLength: 10);
@@ -219,14 +219,14 @@ extension LimitedEllipses on String {
   }
 }
 
-/// # [WorkWithStrings] documentation :
+/// ## [WorkWithStrings] documentation :
 ///
 /// An extension on `String` that allows reversing the characters of a string.
 ///
 /// This extension provides a `reversed` getter that can be used to reverse the
 /// characters of a string and obtain the reversed version of the original string.
 ///
-/// Example usage:
+/// ### Example usage:
 /// ```dart
 /// final text = 'Hello, World!';
 /// final reversedText = text.reversed;
@@ -236,25 +236,65 @@ extension LimitedEllipses on String {
 /// The `reversed` getter splits the original string into individual characters,
 /// reverses their order, and then joins them back together into a new string.
 ///
-/// Example:
+/// ### Example:
 /// ```dart
 /// final text = 'Hello';
 /// final reversedText = text.reversed;
 /// // reversedText is 'olleH'
 /// ```
 ///
-/// Note: This extension method does not handle null references or objects other
+/// ### Note: This extension method does not handle null references or objects other
 /// than strings.
 extension WorkWithStrings on String {
   /// Reverses the characters of a string.
   ///
   /// Returns a new string with the characters of the original string reversed.
   ///
-  /// Example:
+  /// ### Example:
   /// ```dart
   /// final text = 'Hello, World!';
   /// final reversedText = text.reversed;
   /// // reversedText is '!dlroW ,olleH'
   /// ```
   String get reversed => split('').reversed.join();
+
+  /// ## [convertFromPersian] Function
+  ///
+  /// Converts a Persian text representation of numbers and characters to their
+  /// Latin counterparts in a given string.
+  ///
+  /// This function is useful for normalizing Persian text containing Persian digits
+  /// (۰-۹) and replacing the Persian letter "ی" with its Latin counterpart "ي".
+  ///
+  /// ### Parameters:
+  /// - [txt]: The input string containing Persian text.
+  ///
+  /// ### Returns:
+  /// A string with Persian digits converted to Latin digits and Persian "ی" replaced
+  /// with Latin "ي".
+  ///
+  /// ### Example:
+  /// ```dart
+  /// String persianText = "۱۲۳۴۵ ی۶۷۸۹";
+  /// String convertedText = convertFromPersian(persianText);
+  /// print(convertedText); // Output: "12345 ي6789"
+  /// ```
+  String convertFromPersian(String txt) {
+    /// Replace Persian digits with Latin digits and "ی" with "ي".
+    txt = txt
+        .replaceAll("۰", "0")
+        .replaceAll("۱", "1")
+        .replaceAll("۲", "2")
+        .replaceAll("۳", "3")
+        .replaceAll("۴", "4")
+        .replaceAll("۵", "5")
+        .replaceAll("۶", "6")
+        .replaceAll("۷", "7")
+        .replaceAll("۸", "8")
+        .replaceAll("۹", "9")
+        .replaceAll("ی", "ي");
+
+    /// Remove leading and trailing white spaces.
+    return txt.trim();
+  }
 }
