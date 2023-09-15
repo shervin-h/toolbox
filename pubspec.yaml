@@ -1,5 +1,5 @@
 name: toolbox
-description: A new Flutter package project by shervin.hz07@gmailcom .
+description: A new Flutter package project by shervin.hz07@gmail.com .
 version: 0.0.1
 homepage:
 
@@ -10,6 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  path_provider: ^2.1.1
+  flutter_map: ^5.0.0
+  latlong2: ^0.9.0
+  location: ^5.0.3
 
 dev_dependencies:
   flutter_test:
