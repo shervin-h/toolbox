@@ -1,9 +1,9 @@
 name: toolbox
-description: A new Flutter package project by shervin.hz07@gmail.com .
+description: A library that contains the required tools .
 version: 0.0.1
-homepage:
-repository: https://github.com/shervin-h
-issue_tracker: https://github.com/shervin-h
+homepage: https://github.com/shervin-h/toolbox
+repository: https://github.com/shervin-h/toolbox
+issue_tracker: https://github.com/shervin-h/toolbox/issues
 
 environment:
   sdk: '>=3.0.1 <4.0.0'
