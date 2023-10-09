@@ -20,6 +20,7 @@ import 'package:location/location.dart';
 ///   - `height`: The height of the map container (default is 140).
 ///   - `margin`: The margin around the map container.
 ///   - `shadowColor`: The shadow color applied to the map container.
+///   - `showCurrentLocation`: a bool to show user location or not.
 ///   - `onLocationChanged`: A callback function that is called when the selected
 ///     location on the map is changed. It provides the new location as a `LatLng` object.
 ///
@@ -56,6 +57,7 @@ class MapLocationWidget extends StatefulWidget {
     this.height = 140,
     this.margin,
     this.shadowColor,
+    this.showCurrentLocation = true,
     this.onLocationChanged,
     Key? key,
   }) : super(key: key);
@@ -67,6 +69,7 @@ class MapLocationWidget extends StatefulWidget {
   final double height;
   final EdgeInsetsGeometry? margin;
   final Color? shadowColor;
+  final bool showCurrentLocation;
   final void Function(LatLng latLng)? onLocationChanged;
 
   @override
@@ -83,7 +86,9 @@ class MapLocationWidgetState extends State<MapLocationWidget> {
   void initState() {
     super.initState();
     _mapController = MapController();
-    _getUserLocation();
+    if (widget.showCurrentLocation) {
+      _getUserLocation();
+    }
   }
 
   Future<void> _getUserLocation() async {

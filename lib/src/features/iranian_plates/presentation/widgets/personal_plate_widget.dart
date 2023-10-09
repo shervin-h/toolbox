@@ -37,8 +37,8 @@ class PersonalPlateState extends State<PersonalPlate> {
   late FocusNode num2FocusNode;
   late FocusNode num3FocusNode;
 
-  String letter = 'ب';
-  List<String> letters = [];
+  late String letter;
+  late List<String> letters;
 
   @override
   void initState() {
@@ -225,10 +225,10 @@ class PersonalPlateState extends State<PersonalPlate> {
                                       .textTheme
                                       .bodyLarge!
                                       .copyWith(
-                                          color: Colors.black,
-                                          fontSize: widget.width *
-                                              0.05 /*isTablet ? 18 : 14*/,
-                                          fontWeight: FontWeight.bold),
+                                        color: Colors.black,
+                                        fontSize: widget.width * 0.05,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                 ),
                               ),
                             ),
@@ -274,56 +274,52 @@ class PersonalPlateState extends State<PersonalPlate> {
                 padding: const EdgeInsets.all(1),
                 decoration: const BoxDecoration(
                     border: Border(left: BorderSide(width: 2))),
-                child: SingleChildScrollView(
-                  physics: const NeverScrollableScrollPhysics(),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Padding(
-                        padding:
-                            EdgeInsets.symmetric(horizontal: isTablet ? 2 : 1),
-                        child: Image.asset(
-                          'assets/images/iran1.png',
-                          width: double.infinity,
-                          fit: BoxFit.fitWidth,
-                        ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding:
+                          EdgeInsets.symmetric(horizontal: isTablet ? 2 : 1),
+                      child: Image.asset(
+                        'assets/images/iran1.png',
+                        width: double.infinity,
+                        fit: BoxFit.fitWidth,
                       ),
-                      Container(
-                        alignment: Alignment.center,
-                        margin: const EdgeInsets.only(top: 2),
-                        child: TextField(
-                          controller: num3Controller,
-                          focusNode: num3FocusNode,
-                          enabled: widget.enable,
-                          keyboardType: TextInputType.number,
-                          maxLines: 1,
-                          maxLength: 2,
-                          textAlign: TextAlign.center,
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyLarge!
-                              .copyWith(
+                    ),
+                    Container(
+                      alignment: Alignment.center,
+                      margin: const EdgeInsets.only(top: 2),
+                      child: TextField(
+                        controller: num3Controller,
+                        focusNode: num3FocusNode,
+                        enabled: widget.enable,
+                        keyboardType: TextInputType.number,
+                        maxLines: 1,
+                        maxLength: 2,
+                        textAlign: TextAlign.center,
+                        style:
+                            Theme.of(context).textTheme.bodyLarge!.copyWith(
                                   color: Colors.black,
                                   fontSize: widget.width * 0.08,
-                                  fontWeight: FontWeight.bold),
-                          decoration: const InputDecoration(
-                            filled: true,
-                            fillColor: Colors.transparent,
-                            counterText: '',
-                            border:
-                                OutlineInputBorder(borderSide: BorderSide.none),
-                            focusedBorder:
-                                OutlineInputBorder(borderSide: BorderSide.none),
-                            enabledBorder:
-                                OutlineInputBorder(borderSide: BorderSide.none),
-                            disabledBorder:
-                                OutlineInputBorder(borderSide: BorderSide.none),
-                          ),
+                                  fontWeight: FontWeight.bold,
+                                ),
+                        decoration: const InputDecoration(
+                          filled: true,
+                          fillColor: Colors.transparent,
+                          counterText: '',
+                          border:
+                              OutlineInputBorder(borderSide: BorderSide.none),
+                          focusedBorder:
+                              OutlineInputBorder(borderSide: BorderSide.none),
+                          enabledBorder:
+                              OutlineInputBorder(borderSide: BorderSide.none),
+                          disabledBorder:
+                              OutlineInputBorder(borderSide: BorderSide.none),
                         ),
                       ),
-                      // const SizedBox(),
-                    ],
-                  ),
+                    ),
+                    // const SizedBox(),
+                  ],
                 ),
               ),
             ),

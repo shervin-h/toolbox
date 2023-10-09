@@ -21,27 +21,27 @@ import 'package:toolbox/src/core/enums/app_enums.dart';
 /// String formattedTime = timeNormalizer(currentTime);
 /// print(formattedTime); // Example Output: "09:05" (if the current time is 9:05 AM)
 /// ```
-String timeNormalizer(Jalali timeParam) {
+String timeNormalizer(Jalali jalali) {
   String currentHour = '';
   String currentMinutes = '';
 
   /// Check if the hour is less than 10 and add a leading zero if necessary.
-  if (timeParam.hour < 10) {
-    currentHour = "0${timeParam.hour}";
+  if (jalali.hour < 10) {
+    currentHour = "0${jalali.hour}";
 
     /// Check if the minute is less than 10 and add a leading zero if necessary.
-    if (timeParam.minute < 10) {
-      currentMinutes = "0${timeParam.minute}";
+    if (jalali.minute < 10) {
+      currentMinutes = "0${jalali.minute}";
     } else {
-      currentMinutes = timeParam.minute.toString();
+      currentMinutes = jalali.minute.toString();
     }
   } else {
-    currentHour = timeParam.hour.toString();
-    if (timeParam.minute < 10) {
+    currentHour = jalali.hour.toString();
+    if (jalali.minute < 10) {
       /// Check if the minute is less than 10 and add a leading zero if necessary.
-      currentMinutes = "0${timeParam.minute}";
+      currentMinutes = "0${jalali.minute}";
     } else {
-      currentMinutes = timeParam.minute.toString();
+      currentMinutes = jalali.minute.toString();
     }
   }
   return "$currentHour:$currentMinutes";
@@ -64,34 +64,34 @@ String timeNormalizer(Jalali timeParam) {
 /// ### Example:
 /// ```dart
 /// Jalali currentDate = Jalali.now();
-/// String formattedDate = normalShamsiDate(currentDate);
+/// String formattedDate = normalizeJalaliDate(currentDate);
 /// print(formattedDate); // Example Output: "1402/05/15" (if the current date is May 15, 1402)
 /// ```
-String normalizeJalaliDate(Jalali dateParam) {
+String normalizeJalaliDate(Jalali jalali) {
   String currentMonth = '';
   String currentDay = '';
 
   /// Check if the month is less than 10 and add a leading zero if necessary.
-  if (dateParam.month < 10) {
-    currentMonth = "0${dateParam.month}";
-    if (dateParam.day < 10) {
+  if (jalali.month < 10) {
+    currentMonth = "0${jalali.month}";
+    if (jalali.day < 10) {
       /// Check if the day is less than 10 and add a leading zero if necessary.
-      currentDay = "0${dateParam.day}";
+      currentDay = "0${jalali.day}";
     } else {
-      currentDay = dateParam.day.toString();
+      currentDay = jalali.day.toString();
     }
   } else {
-    currentMonth = dateParam.month.toString();
-    if (dateParam.day < 10) {
+    currentMonth = jalali.month.toString();
+    if (jalali.day < 10) {
       /// Check if the day is less than 10 and add a leading zero if necessary.
-      currentDay = "0${dateParam.day}";
+      currentDay = "0${jalali.day}";
     } else {
-      currentDay = dateParam.day.toString();
+      currentDay = jalali.day.toString();
     }
   }
 
   /// Combine the year, month, and day to create the formatted date string.
-  return "${dateParam.year}/$currentMonth/$currentDay";
+  return "${jalali.year}/$currentMonth/$currentDay";
 }
 
 /// ## [currentJalaliDate] Function :

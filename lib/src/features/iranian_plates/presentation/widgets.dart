@@ -1,3 +1,4 @@
+export 'widgets/__plate_keys.dart';
 export 'widgets/army_plate_widget.dart';
 export 'widgets/general_plate_widget.dart';
 export 'widgets/government_plate_widget.dart';
