@@ -140,10 +140,7 @@ class GeneralPlateState extends State<GeneralPlate> {
 
   @override
   Widget build(BuildContext context) {
-    final bool isTablet = MediaQuery
-        .of(context)
-        .size
-        .shortestSide > 600;
+    final bool isTablet = MediaQuery.of(context).size.shortestSide > 600;
 
     return Directionality(
       textDirection: TextDirection.ltr,
@@ -178,27 +175,19 @@ class GeneralPlateState extends State<GeneralPlate> {
                   children: [
                     Text(
                       '🇮🇷',
-                      style: Theme
-                          .of(context)
-                          .textTheme
-                          .bodyLarge!
-                          .copyWith(
-                        color: Colors.white,
-                        fontSize: widget.width * 0.038,
-                        fontWeight: FontWeight.bold,
-                      ),
+                      style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                            color: Colors.white,
+                            fontSize: widget.width * 0.038,
+                            fontWeight: FontWeight.bold,
+                          ),
                     ),
                     Text(
                       'I.R.\nIRAN',
-                      style: Theme
-                          .of(context)
-                          .textTheme
-                          .bodyLarge!
-                          .copyWith(
-                        fontSize: widget.width * 0.028,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                      ),
+                      style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                            fontSize: widget.width * 0.028,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
                     ),
                   ],
                 ),
@@ -216,11 +205,7 @@ class GeneralPlateState extends State<GeneralPlate> {
                 maxLength: 2,
                 textAlign: TextAlign.center,
                 cursorColor: Colors.black,
-                style: Theme
-                    .of(context)
-                    .textTheme
-                    .bodyLarge!
-                    .copyWith(
+                style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                     color: Colors.black,
                     fontSize: widget.width * 0.08,
                     fontWeight: FontWeight.bold),
@@ -231,11 +216,11 @@ class GeneralPlateState extends State<GeneralPlate> {
                   counterText: '',
                   border: OutlineInputBorder(borderSide: BorderSide.none),
                   focusedBorder:
-                  OutlineInputBorder(borderSide: BorderSide.none),
+                      OutlineInputBorder(borderSide: BorderSide.none),
                   enabledBorder:
-                  OutlineInputBorder(borderSide: BorderSide.none),
+                      OutlineInputBorder(borderSide: BorderSide.none),
                   disabledBorder:
-                  OutlineInputBorder(borderSide: BorderSide.none),
+                      OutlineInputBorder(borderSide: BorderSide.none),
                 ),
               ),
             ),
@@ -246,11 +231,7 @@ class GeneralPlateState extends State<GeneralPlate> {
                 iconSize: widget.width * 0.2 * 0.6,
                 icon: Text(
                   letter,
-                  style: Theme
-                      .of(context)
-                      .textTheme
-                      .bodyLarge!
-                      .copyWith(
+                  style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                       color: Colors.black,
                       fontSize: widget.width * 0.07,
                       fontWeight: FontWeight.bold),
@@ -264,27 +245,25 @@ class GeneralPlateState extends State<GeneralPlate> {
                 itemBuilder: (context) {
                   return (letters.isNotEmpty)
                       ? letters
-                      .map(
-                        (String char) =>
-                        PopupMenuItem(
-                          value: char,
-                          child: Center(
-                            child: Text(
-                              char,
-                              style: Theme
-                                  .of(context)
-                                  .textTheme
-                                  .bodyLarge!
-                                  .copyWith(
-                                color: Colors.black,
-                                fontSize: widget.width * 0.05,
-                                fontWeight: FontWeight.bold,
+                          .map(
+                            (String char) => PopupMenuItem(
+                              value: char,
+                              child: Center(
+                                child: Text(
+                                  char,
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .bodyLarge!
+                                      .copyWith(
+                                        color: Colors.black,
+                                        fontSize: widget.width * 0.05,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                ),
                               ),
                             ),
-                          ),
-                        ),
-                  )
-                      .toList()
+                          )
+                          .toList()
                       : <PopupMenuItem>[];
                 },
               ),
@@ -300,11 +279,7 @@ class GeneralPlateState extends State<GeneralPlate> {
                 textAlign: TextAlign.center,
                 maxLength: 3,
                 cursorColor: Colors.black,
-                style: Theme
-                    .of(context)
-                    .textTheme
-                    .bodyLarge!
-                    .copyWith(
+                style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                     color: Colors.black,
                     fontSize: widget.width * 0.08,
                     fontWeight: FontWeight.bold),
@@ -315,11 +290,11 @@ class GeneralPlateState extends State<GeneralPlate> {
                   counterText: '',
                   border: OutlineInputBorder(borderSide: BorderSide.none),
                   focusedBorder:
-                  OutlineInputBorder(borderSide: BorderSide.none),
+                      OutlineInputBorder(borderSide: BorderSide.none),
                   enabledBorder:
-                  OutlineInputBorder(borderSide: BorderSide.none),
+                      OutlineInputBorder(borderSide: BorderSide.none),
                   disabledBorder:
-                  OutlineInputBorder(borderSide: BorderSide.none),
+                      OutlineInputBorder(borderSide: BorderSide.none),
                 ),
               ),
             ),
@@ -338,7 +313,7 @@ class GeneralPlateState extends State<GeneralPlate> {
                     children: [
                       Padding(
                         padding:
-                        EdgeInsets.symmetric(horizontal: isTablet ? 2 : 1),
+                            EdgeInsets.symmetric(horizontal: isTablet ? 2 : 1),
                         child: Image.asset(
                           'assets/images/iran1.png',
                           width: double.infinity,
@@ -358,27 +333,23 @@ class GeneralPlateState extends State<GeneralPlate> {
                           textAlign: TextAlign.center,
                           cursorColor: Colors.black,
                           style:
-                          Theme
-                              .of(context)
-                              .textTheme
-                              .bodyLarge!
-                              .copyWith(
-                            color: Colors.black,
-                            fontSize: widget.width * 0.08,
-                            fontWeight: FontWeight.bold,
-                          ),
+                              Theme.of(context).textTheme.bodyLarge!.copyWith(
+                                    color: Colors.black,
+                                    fontSize: widget.width * 0.08,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                           decoration: const InputDecoration(
                             filled: true,
                             fillColor: Colors.transparent,
                             counterText: '',
                             border:
-                            OutlineInputBorder(borderSide: BorderSide.none),
+                                OutlineInputBorder(borderSide: BorderSide.none),
                             focusedBorder:
-                            OutlineInputBorder(borderSide: BorderSide.none),
+                                OutlineInputBorder(borderSide: BorderSide.none),
                             enabledBorder:
-                            OutlineInputBorder(borderSide: BorderSide.none),
+                                OutlineInputBorder(borderSide: BorderSide.none),
                             disabledBorder:
-                            OutlineInputBorder(borderSide: BorderSide.none),
+                                OutlineInputBorder(borderSide: BorderSide.none),
                           ),
                         ),
                       ),

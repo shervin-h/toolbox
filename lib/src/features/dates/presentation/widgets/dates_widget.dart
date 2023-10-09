@@ -165,7 +165,8 @@ class DatesWidgetState extends State<DatesWidget> {
                       yourChoice: currentIndex == index,
                       desc: '',
                       selectedColor: widget.selectedItemColor ?? Colors.green,
-                      unSelectedColor: widget.unSelectedItemColor ?? Colors.grey,
+                      unSelectedColor:
+                          widget.unSelectedItemColor ?? Colors.grey,
                     ),
                   );
                 },

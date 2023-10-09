@@ -244,14 +244,12 @@ class TransitPlateState extends State<TransitPlate> {
                           iconSize: widget.width * 0.2 * 0.5,
                           icon: Text(
                             letter,
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyLarge!
-                                .copyWith(
-                                  color: Colors.black,
-                                  fontSize: widget.width * 0.07,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                            style:
+                                Theme.of(context).textTheme.bodyLarge!.copyWith(
+                                      color: Colors.black,
+                                      fontSize: widget.width * 0.07,
+                                      fontWeight: FontWeight.bold,
+                                    ),
                           ),
                           initialValue: letter,
                           onSelected: (value) {

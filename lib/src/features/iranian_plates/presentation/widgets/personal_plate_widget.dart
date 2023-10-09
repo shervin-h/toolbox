@@ -334,12 +334,11 @@ class PersonalPlateState extends State<PersonalPlate> {
                         maxLines: 1,
                         maxLength: 2,
                         textAlign: TextAlign.center,
-                        style:
-                            Theme.of(context).textTheme.bodyLarge!.copyWith(
-                                  color: Colors.black,
-                                  fontSize: widget.width * 0.08,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                        style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                              color: Colors.black,
+                              fontSize: widget.width * 0.08,
+                              fontWeight: FontWeight.bold,
+                            ),
                         decoration: const InputDecoration(
                           filled: true,
                           fillColor: Colors.transparent,

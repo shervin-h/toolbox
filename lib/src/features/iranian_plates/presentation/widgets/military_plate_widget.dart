@@ -169,10 +169,10 @@ class MilitaryPlateState extends State<MilitaryPlate> {
                   children: [
                     Text(
                       '🇮🇷',
-                      style: Theme.of(context)
-                          .textTheme
-                          .bodyText1!
-                          .copyWith(color: Colors.white, fontSize: widget.width * 0.038, fontWeight: FontWeight.bold),
+                      style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                          color: Colors.white,
+                          fontSize: widget.width * 0.038,
+                          fontWeight: FontWeight.bold),
                     ),
                     Text(
                       'I.R.\nIRAN',
@@ -209,9 +209,12 @@ class MilitaryPlateState extends State<MilitaryPlate> {
                   fillColor: Colors.transparent,
                   counterText: '',
                   border: OutlineInputBorder(borderSide: BorderSide.none),
-                  focusedBorder: OutlineInputBorder(borderSide: BorderSide.none),
-                  enabledBorder: OutlineInputBorder(borderSide: BorderSide.none),
-                  disabledBorder: OutlineInputBorder(borderSide: BorderSide.none),
+                  focusedBorder:
+                      OutlineInputBorder(borderSide: BorderSide.none),
+                  enabledBorder:
+                      OutlineInputBorder(borderSide: BorderSide.none),
+                  disabledBorder:
+                      OutlineInputBorder(borderSide: BorderSide.none),
                 ),
               ),
             ),
@@ -243,7 +246,13 @@ class MilitaryPlateState extends State<MilitaryPlate> {
                               child: Center(
                                 child: Text(
                                   char,
-                                  style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: widget.width * 0.05 /*isTablet ? 18 : 14*/, fontWeight: FontWeight.bold),
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .bodyText1!
+                                      .copyWith(
+                                          fontSize: widget.width *
+                                              0.05 /*isTablet ? 18 : 14*/,
+                                          fontWeight: FontWeight.bold),
                                 ),
                               ),
                             ),
@@ -264,17 +273,22 @@ class MilitaryPlateState extends State<MilitaryPlate> {
                 textAlign: TextAlign.center,
                 maxLength: 3,
                 cursorColor: Colors.white,
-                style:
-                    Theme.of(context).textTheme.bodyText1!.copyWith(color: Colors.white, fontSize: widget.width * 0.08, fontWeight: FontWeight.bold),
+                style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    color: Colors.white,
+                    fontSize: widget.width * 0.08,
+                    fontWeight: FontWeight.bold),
                 decoration: const InputDecoration(
                   contentPadding: EdgeInsets.all(1),
                   filled: true,
                   fillColor: Colors.transparent,
                   counterText: '',
                   border: OutlineInputBorder(borderSide: BorderSide.none),
-                  focusedBorder: OutlineInputBorder(borderSide: BorderSide.none),
-                  enabledBorder: OutlineInputBorder(borderSide: BorderSide.none),
-                  disabledBorder: OutlineInputBorder(borderSide: BorderSide.none),
+                  focusedBorder:
+                      OutlineInputBorder(borderSide: BorderSide.none),
+                  enabledBorder:
+                      OutlineInputBorder(borderSide: BorderSide.none),
+                  disabledBorder:
+                      OutlineInputBorder(borderSide: BorderSide.none),
                 ),
               ),
             ),
@@ -283,7 +297,9 @@ class MilitaryPlateState extends State<MilitaryPlate> {
               child: Container(
                 height: double.infinity,
                 padding: const EdgeInsets.all(1),
-                decoration: const BoxDecoration(border: Border(left: BorderSide(color: Colors.white, width: 2))),
+                decoration: const BoxDecoration(
+                    border: Border(
+                        left: BorderSide(color: Colors.white, width: 2))),
                 child: SingleChildScrollView(
                   physics: const NeverScrollableScrollPhysics(),
                   child: Column(
@@ -297,8 +313,13 @@ class MilitaryPlateState extends State<MilitaryPlate> {
                       //       .copyWith(color: Colors.white, fontSize: widget.width * 0.04, fontWeight: FontWeight.bold, fontFamily: 'AGhasem'),
                       // ),
                       Padding(
-                        padding: EdgeInsets.symmetric(horizontal: isTablet ? 2 : 1),
-                        child: Image.asset('assets/images/iran2.png', width: double.infinity,fit: BoxFit.fitWidth,),
+                        padding:
+                            EdgeInsets.symmetric(horizontal: isTablet ? 2 : 1),
+                        child: Image.asset(
+                          'assets/images/iran2.png',
+                          width: double.infinity,
+                          fit: BoxFit.fitWidth,
+                        ),
                       ),
                       TextField(
                         controller: num3Controller,
@@ -309,18 +330,22 @@ class MilitaryPlateState extends State<MilitaryPlate> {
                         maxLength: 2,
                         textAlign: TextAlign.center,
                         cursorColor: Colors.white,
-                        style: Theme.of(context)
-                            .textTheme
-                            .bodyText1!
-                            .copyWith(color: Colors.white, fontSize: widget.width * 0.08, fontWeight: FontWeight.bold),
+                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                            color: Colors.white,
+                            fontSize: widget.width * 0.08,
+                            fontWeight: FontWeight.bold),
                         decoration: const InputDecoration(
                           filled: true,
                           fillColor: Colors.transparent,
                           counterText: '',
-                          border: OutlineInputBorder(borderSide: BorderSide.none),
-                          focusedBorder: OutlineInputBorder(borderSide: BorderSide.none),
-                          enabledBorder: OutlineInputBorder(borderSide: BorderSide.none),
-                          disabledBorder: OutlineInputBorder(borderSide: BorderSide.none),
+                          border:
+                              OutlineInputBorder(borderSide: BorderSide.none),
+                          focusedBorder:
+                              OutlineInputBorder(borderSide: BorderSide.none),
+                          enabledBorder:
+                              OutlineInputBorder(borderSide: BorderSide.none),
+                          disabledBorder:
+                              OutlineInputBorder(borderSide: BorderSide.none),
                         ),
                       ),
                       const SizedBox()

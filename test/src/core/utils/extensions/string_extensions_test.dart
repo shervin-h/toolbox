@@ -15,7 +15,7 @@ void main() {
 
       test(
         'should be return `false`',
-            () {
+        () {
           var result = '1234567890'.isValidNationalCode();
           expect(result, false);
         },
@@ -23,7 +23,7 @@ void main() {
 
       test(
         'should be return `true`',
-            () {
+        () {
           var result = '9732478926'.isValidNationalCode();
           expect(result, true);
         },

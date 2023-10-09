@@ -60,15 +60,14 @@ class MapWidget extends StatelessWidget {
     return Container(
       margin: margin,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(radius),
-        boxShadow: [
-          if (shadowColor != null)
-            BoxShadow(
-              color: shadowColor!,
-              blurRadius: 8,
-            )
-        ]
-      ),
+          borderRadius: BorderRadius.circular(radius),
+          boxShadow: [
+            if (shadowColor != null)
+              BoxShadow(
+                color: shadowColor!,
+                blurRadius: 8,
+              )
+          ]),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(radius),
         child: SizedBox(
