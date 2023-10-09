@@ -1,5 +1,5 @@
 import 'package:shamsi_date/shamsi_date.dart';
-import 'package:toolbox/src/core/enums/app_enums.dart';
+import 'package:persian_toolbox/src/core/enums/app_enums.dart';
 
 /// ## [timeNormalizer] Function :
 ///

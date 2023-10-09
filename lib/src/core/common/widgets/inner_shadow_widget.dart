@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toolbox/src/core/utils/inner_shadow.dart';
+import 'package:persian_toolbox/src/core/utils/inner_shadow.dart';
 
 /// ## [InnerShadowWidget] documentation :
 ///

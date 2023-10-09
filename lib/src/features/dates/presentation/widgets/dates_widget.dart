@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toolbox/src/features/dates/data/models/day_model.dart';
+import 'package:persian_toolbox/src/features/dates/data/models/day_model.dart';
 
 /// ## [DatesWidget] documentation :
 ///

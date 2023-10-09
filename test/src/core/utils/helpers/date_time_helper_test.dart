@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shamsi_date/shamsi_date.dart';
-import 'package:toolbox/src/core/utils/helpers/date_time_helper.dart';
+import 'package:persian_toolbox/src/core/utils/helpers/date_time_helper.dart';
 
 void main() {
   group(

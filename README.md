@@ -1,6 +1,6 @@
 ![Example Image](https://github.com/shervin-h/toolbox/blob/master/assets/images/screenshot.png?raw=true)
 
-# Toolbox
+# Persian Toolbox
 
 A library that includes tools needed by Flutter developers
 
@@ -10,7 +10,7 @@ Add the following line to your `pubspec.yaml` under `dependencies`:
 
 ```yaml
 dependencies:
-  toolbox: ^0.0.1
+  persian_toolbox: ^0.0.1
 ```
 
 Then run:
@@ -22,7 +22,7 @@ flutter pub get
 ## Usage
 
 ```dart
-import 'package:toolbox/toolbox.dart';
+import 'package:toolbox/persian_toolbox.dart';
 ```
 
 ```dart

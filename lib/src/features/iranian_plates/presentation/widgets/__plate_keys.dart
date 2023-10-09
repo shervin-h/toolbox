@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:toolbox/src/features/iranian_plates/presentation/widgets/army_plate_widget.dart';
-import 'package:toolbox/src/features/iranian_plates/presentation/widgets/general_plate_widget.dart';
-import 'package:toolbox/src/features/iranian_plates/presentation/widgets/government_plate_widget.dart';
-import 'package:toolbox/src/features/iranian_plates/presentation/widgets/military_plate_widget.dart';
-import 'package:toolbox/src/features/iranian_plates/presentation/widgets/motor_government_plate_widget.dart';
-import 'package:toolbox/src/features/iranian_plates/presentation/widgets/motor_plate_widget.dart';
-import 'package:toolbox/src/features/iranian_plates/presentation/widgets/personal_plate_widget.dart';
-import 'package:toolbox/src/features/iranian_plates/presentation/widgets/police_plate_widget.dart';
-import 'package:toolbox/src/features/iranian_plates/presentation/widgets/political_plate_widget.dart';
-import 'package:toolbox/src/features/iranian_plates/presentation/widgets/protocol_plate_widget.dart';
-import 'package:toolbox/src/features/iranian_plates/presentation/widgets/temporary_plate_widget.dart';
-import 'package:toolbox/src/features/iranian_plates/presentation/widgets/transit_plate_widget.dart';
-import 'package:toolbox/src/features/iranian_plates/presentation/widgets/vetrans_plate_widget.dart';
+import 'package:persian_toolbox/src/features/iranian_plates/presentation/widgets/army_plate_widget.dart';
+import 'package:persian_toolbox/src/features/iranian_plates/presentation/widgets/general_plate_widget.dart';
+import 'package:persian_toolbox/src/features/iranian_plates/presentation/widgets/government_plate_widget.dart';
+import 'package:persian_toolbox/src/features/iranian_plates/presentation/widgets/military_plate_widget.dart';
+import 'package:persian_toolbox/src/features/iranian_plates/presentation/widgets/motor_government_plate_widget.dart';
+import 'package:persian_toolbox/src/features/iranian_plates/presentation/widgets/motor_plate_widget.dart';
+import 'package:persian_toolbox/src/features/iranian_plates/presentation/widgets/personal_plate_widget.dart';
+import 'package:persian_toolbox/src/features/iranian_plates/presentation/widgets/police_plate_widget.dart';
+import 'package:persian_toolbox/src/features/iranian_plates/presentation/widgets/political_plate_widget.dart';
+import 'package:persian_toolbox/src/features/iranian_plates/presentation/widgets/protocol_plate_widget.dart';
+import 'package:persian_toolbox/src/features/iranian_plates/presentation/widgets/temporary_plate_widget.dart';
+import 'package:persian_toolbox/src/features/iranian_plates/presentation/widgets/transit_plate_widget.dart';
+import 'package:persian_toolbox/src/features/iranian_plates/presentation/widgets/vetrans_plate_widget.dart';
 
 /// ## [PlateKeys] Class documentations :
 ///

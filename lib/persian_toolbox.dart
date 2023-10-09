@@ -1,7 +1,7 @@
-/// Library for the Toolbox.
+/// Library for the Persian Toolbox.
 ///
 /// The library provide access to the Toolbox core, features , ....
-library toolbox;
+library persian_toolbox;
 
 export 'src/core/core.dart';
 export 'src/features/features.dart';
