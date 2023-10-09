@@ -1,6 +1,35 @@
 import 'package:flutter/material.dart';
 
+/// ## [MotorPlate] Documentation:
+///
+/// A widget for displaying a customizable Iranian motorcycle license plate.
+///
+/// The [MotorPlate] widget is used to display a motorcycle license plate with fields for
+/// entering numbers and the "I.R. IRAN" label. It allows customization of the license plate's appearance,
+/// including the initial numbers and more.
+///
+/// Example usage:
+/// ```dart
+/// MotorPlate(
+///   width: 200,
+///   num1: '123',
+///   num2: '45678',
+///   enable: true,
+/// )
+/// ```
+///
+/// This widget is often used in applications that require users to input motorcycle license plate
+/// numbers, such as vehicle registration systems.
+///
 class MotorPlate extends StatefulWidget {
+  /// Creates a [MotorPlate] widget with customizable parameters.
+  ///
+  /// The [width] parameter sets the overall width of the license plate widget.
+  ///
+  /// The [num1] and [num2] parameters represent the initial numbers on the license plate.
+  ///
+  /// The [enable] parameter determines whether the input fields are enabled for user interaction.
+  ///
   MotorPlate({
     required this.width,
     this.num1,

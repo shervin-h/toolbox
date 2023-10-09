@@ -1,6 +1,43 @@
 import 'package:flutter/material.dart';
 
+/// ## [PersonalPlate] Documentation:
+///
+/// A widget for displaying a customizable Iranian personal license plate.
+///
+/// The [PersonalPlate] widget is used to display a personal license plate with fields for entering numbers, letters,
+/// and an optional third number. It allows customization of the license plate's appearance, including the initial
+/// numbers, letters, and more.
+///
+/// Example usage:
+/// ```dart
+/// PersonalPlate(
+///   width: 300,
+///   num1: '12',
+///   letter: 'ب',
+///   num2: '345',
+///   num3: '67',
+///   enable: true,
+/// )
+/// ```
+///
+/// This widget is often used in applications that require users to input personal license plate numbers, such as vehicle
+/// registration systems.
+///
 class PersonalPlate extends StatefulWidget {
+  /// Creates a [PersonalPlate] widget with customizable parameters.
+  ///
+  /// The [width] parameter sets the overall width of the license plate widget.
+  ///
+  /// The [num1], [num2], and [num3] parameters represent the initial numbers on the license plate.
+  ///
+  /// The [letter] parameter represents the initial letter on the license plate.
+  ///
+  /// The [letters] parameter is a list of available letters for selection in the license plate.
+  ///
+  /// The [autofocus] parameter determines whether the first
+  ///
+  /// The [enable] parameter determines whether the input fields are enabled for user interaction.
+  ///
   PersonalPlate({
     required this.width,
     this.num1,

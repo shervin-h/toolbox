@@ -1,6 +1,42 @@
 import 'package:flutter/material.dart';
 
+/// ## [TemporaryPlate] Documentation:
+///
+/// A widget for displaying a customizable Iranian temporary license plate.
+///
+/// The [TemporaryPlate] widget is used to display a temporary license plate with fields for entering numeric values and a letter.
+/// It allows customization of the license plate's appearance, including the initial values.
+///
+/// Example usage:
+/// ```dart
+/// TemporaryPlate(
+///   width: 300,
+///   num1: '12',
+///   num2: '345',
+///   letter: 'گ',
+///   num3: '67',
+///   num4: '12345',
+///   enable: true,
+/// )
+/// ```
+///
+/// This widget is often used in applications that require users to input temporary license plate numbers.
+///
 class TemporaryPlate extends StatefulWidget {
+  /// Creates a [TemporaryPlate] widget with customizable parameters.
+  ///
+  /// The [width] parameter sets the overall width of the license plate widget.
+  ///
+  /// The [num1], [num2], [num3], and [num4] parameters represent the initial numeric values on the license plate.
+  ///
+  /// The [letter] parameter represents the initial letter on the license plate.
+  ///
+  /// The [letters] parameter provides a list of selectable letters for the user.
+  ///
+  /// The [autofocus] parameter determines whether the input field should receive focus initially.
+  ///
+  /// The [enable] parameter determines whether the input fields are enabled for user interaction.
+  ///
   TemporaryPlate({
     required this.width,
     this.num1,

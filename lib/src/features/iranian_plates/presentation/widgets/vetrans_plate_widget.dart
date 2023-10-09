@@ -1,7 +1,37 @@
 import 'package:flutter/material.dart';
 // import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+/// ## [VetransPlate] Documentation:
+///
+/// A widget for displaying a customizable Iranian veterans' license plate.
+///
+/// The [VetransPlate] widget is used to display a veterans' license plate with fields for entering numeric values.
+/// It allows customization of the license plate's appearance, including the initial values.
+///
+/// Example usage:
+/// ```dart
+/// VetransPlate(
+///   width: 300,
+///   num1: '12',
+///   num2: '345',
+///   num3: '67',
+///   enable: true,
+/// )
+/// ```
+///
+/// This widget is often used in applications that require users to input veterans' license plate numbers.
+///
 class VetransPlate extends StatefulWidget {
+  /// Creates a [VetransPlate] widget with customizable parameters.
+  ///
+  /// The [width] parameter sets the overall width of the license plate widget.
+  ///
+  /// The [num1], [num2], and [num3] parameters represent the initial numeric values on the license plate.
+  ///
+  /// The [autofocus] parameter determines whether the input field should receive focus initially.
+  ///
+  /// The [enable] parameter determines whether the input fields are enabled for user interaction.
+  ///
   VetransPlate({
     required this.width,
     this.num1,

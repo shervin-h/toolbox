@@ -1,6 +1,42 @@
 import 'package:flutter/material.dart';
 
+/// ## [PolicePlate] Documentation:
+///
+/// A widget for displaying a customizable Iranian police license plate.
+///
+/// The [PolicePlate] widget is used to display a police license plate with fields for entering numbers, letters,
+/// and an optional third number. It allows customization of the license plate's appearance, including the initial
+/// numbers, letters, and more.
+///
+/// Example usage:
+/// ```dart
+/// PolicePlate(
+///   width: 300,
+///   num1: '12',
+///   letter: 'پ',
+///   num2: '345',
+///   num3: '67',
+///   enable: true,
+/// )
+/// ```
+///
+/// This widget is often used in applications that require users to input police license plate numbers.
+///
 class PolicePlate extends StatefulWidget {
+  /// Creates a [PolicePlate] widget with customizable parameters.
+  ///
+  /// The [width] parameter sets the overall width of the license plate widget.
+  ///
+  /// The [num1], [num2], and [num3] parameters represent the initial numbers on the license plate.
+  ///
+  /// The [letter] parameter represents the initial letter on the license plate.
+  ///
+  /// The [letters] parameter is a list of available letters for selection in the license plate.
+  ///
+  /// The [autofocus] parameter determines whether the first input field should receive focus initially.
+  ///
+  /// The [enable] parameter determines whether the input fields are enabled for user interaction.
+  ///
   PolicePlate({
     required this.width,
     this.num1,

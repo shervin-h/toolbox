@@ -1,6 +1,35 @@
 import 'package:flutter/material.dart';
 
+/// ## [MotorGovernmentPlate] Documentation:
+///
+/// A widget for displaying a customizable Iranian government motor vehicle license plate.
+///
+/// The [MotorGovernmentPlate] widget is used to display a motor vehicle license plate with fields for
+/// entering numbers and the "I.R. IRAN" label. It allows customization of the license plate's appearance,
+/// including the initial numbers, plate type, and more.
+///
+/// Example usage:
+/// ```dart
+/// MotorGovernmentPlate(
+///   width: 200,
+///   num1: '123',
+///   num2: '4567',
+///   enable: true,
+/// )
+/// ```
+///
+/// This widget is often used in applications that require users to input motor vehicle license plate
+/// numbers, such as vehicle registration systems.
+///
 class MotorGovernmentPlate extends StatefulWidget {
+  /// Creates a [MotorGovernmentPlate] widget with customizable parameters.
+  ///
+  /// The [width] parameter sets the overall width of the license plate widget.
+  ///
+  /// The [num1] and [num2] parameters represent the initial numbers on the license plate.
+  ///
+  /// The [enable] parameter determines whether the input fields are enabled for user interaction.
+  ///
   MotorGovernmentPlate({
     required this.width,
     this.num1,

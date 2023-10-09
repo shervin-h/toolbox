@@ -14,9 +14,24 @@ and the Flutter guide for
 TODO: Put a short description of the package here that helps potential users
 know whether this package might be useful for them.
 
-## Features
+# Toolbox
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+A library that includes tools needed by Flutter developers
+
+## Install Package
+
+Add the following line to your `pubspec.yaml` under `dependencies`:
+
+```yaml
+dependencies:
+  toolbox: ^0.0.1
+```
+
+Then run:
+
+```
+flutter pub get
+```
 
 ## Getting started
 
@@ -25,11 +40,93 @@ start using the package.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+```dart
+import 'package:toolbox/toolbox.dart';
+```
 
 ```dart
-const like = 'sample';
+const MapWidget(
+  latitude: 35.785843522589396,
+  longitude: 51.317320018994764,
+  height: 200,
+  margin: EdgeInsets.all(20),
+),
+```
+
+```dart
+MapLocationWidget(
+  margin: const EdgeInsets.all(20),
+  latitude: 35.785843522589396,
+  longitude: 51.317320018994764,
+  onLocationChanged: (latLng) {
+  debugPrint(
+    'Latitude: ${latLng.latitude}, Longitude: ${latLng.longitude}');
+  },
+),
+```
+
+```dart
+ArmyPlate(width: 400, enable: true,),
+```
+
+```dart
+GeneralPlate(width: 500, enable: true,),
+```
+
+```dart
+RetryWidget(
+  onPressed: () {} ,
+  message: 'message',
+  label: 'label',
+),
+```
+
+```dart
+DatesWidget(
+days: [
+    DayModel(
+      id: 1,
+      name: 'دوشنبه',
+      date: '12',
+      isSelected: false,
+    ),
+    DayModel(
+      id: 2,
+      name: 'سه شنبه',
+      date: '13',
+      isSelected: true,
+    ),
+    DayModel(
+      id: 3,
+      name: 'چهار شنبه',
+      date: '14',
+      isSelected: false,
+    ),
+    DayModel(
+      id: 4,
+      name: 'پنج شنبه',
+      date: '15',
+      isSelected: false,
+    ),
+    DayModel(
+      id: 5,
+      name: 'جمعه',
+      date: '16',
+      isSelected: false,
+    ),
+  ],
+  selectedItemColor: Colors.orange,
+  unSelectedItemColor: Colors.white,
+),
+```
+
+```dart
+Text(
+  getDifferenceInDays(
+  start: '2023-08-01',
+  end: '2023-09-01',
+  ),
+),
 ```
 
 ## Additional information

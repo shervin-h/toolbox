@@ -1,6 +1,34 @@
 import 'package:flutter/material.dart';
 
+/// ## [ProtocolPlate] Documentation:
+///
+/// A widget for displaying a customizable Iranian protocol license plate.
+///
+/// The [ProtocolPlate] widget is used to display a protocol license plate with a field for entering a numeric value.
+/// It allows customization of the license plate's appearance, including the initial numeric value.
+///
+/// Example usage:
+/// ```dart
+/// ProtocolPlate(
+///   width: 300,
+///   num: '1234',
+///   enable: true,
+/// )
+/// ```
+///
+/// This widget is often used in applications that require users to input protocol license plate numbers.
+///
 class ProtocolPlate extends StatefulWidget {
+  /// Creates a [ProtocolPlate] widget with customizable parameters.
+  ///
+  /// The [width] parameter sets the overall width of the license plate widget.
+  ///
+  /// The [num] parameter represents the initial numeric value on the license plate.
+  ///
+  /// The [autofocus] parameter determines whether the input field should receive focus initially.
+  ///
+  /// The [enable] parameter determines whether the input field is enabled for user interaction.
+  ///
   ProtocolPlate({
     required this.width,
     this.num,
